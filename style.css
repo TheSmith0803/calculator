@@ -30,11 +30,16 @@ html {
 
 #display {
     position: absolute;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
     background-color: #fff3;
-    width: 37em;
-    height: 10em;
+    width: 5.85em;
+    height: 1.6em;
+    padding: 0.2em;
     border-radius: 10px;
     transform: translate(0 , -180%);
+    font-size: 100px;
 }
 
 #buttons {
