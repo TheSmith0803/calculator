@@ -53,7 +53,7 @@ html {
     transform: translate(0, 17%);
 }
 
-.nums {
+.btn {
     color: white;
     width: 5.7em;
     height: 5.2em;
@@ -69,11 +69,11 @@ html {
     text-shadow: 2px 2px 3px black;
 }
 
-.nums:hover {
+.btn:hover {
     background-color: #8885;
 }
 
-.nums:active {
+.btn:active {
     transition: none;
     color: #fff6;
 }
