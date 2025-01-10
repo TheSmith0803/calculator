@@ -1,13 +1,19 @@
+const calculator = document.querySelector("#calc-container");
 const display = document.querySelector("#display");
 const buttons = document.querySelectorAll(".btn");
+const numBtns = document.querySelectorAll(".nums");
 
-for (let i = 0; buttons.length; i++) {
-    buttons[i].addEventListener("click", () => {
-        let num = buttons[i].textContent;
+let num_arr = Array.from(numBtns)
+let num_disp = [];
 
-        display.textContent = num; 
+for (let i = 0; i < numBtns.length; i++) {
+    numBtns[i].addEventListener("click", () => {
+        num_disp.push(numBtns[i]);
+        display.textContent = num_disp;
+        console.log(num_disp);
     });
 }
+
 
 let operators = {
     add: function (a, b) {return a + b},

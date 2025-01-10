@@ -69,11 +69,13 @@ html {
     text-shadow: 2px 2px 3px black;
 }
 
-.btn:hover {
+.btn:hover,
+#clear:hover {
     background-color: #8885;
 }
 
-.btn:active {
+.btn:active,
+#clear:active {
     transition: none;
     color: #fff6;
 }
