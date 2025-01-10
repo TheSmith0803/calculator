@@ -1,18 +1,32 @@
 const calculator = document.querySelector("#calc-container");
 const display = document.querySelector("#display");
 const buttons = document.querySelectorAll(".btn");
-const numBtns = document.querySelectorAll(".nums");
+const numBtns = document.querySelectorAll(".num");
+const clear = document.querySelector("#clear");
 
-let num_arr = Array.from(numBtns)
-let num_disp = [];
+numBtns.innerText
 
-for (let i = 0; i < numBtns.length; i++) {
-    numBtns[i].addEventListener("click", () => {
-        num_disp.push(numBtns[i]);
-        display.textContent = num_disp;
-        console.log(num_disp);
-    });
+//num_arr = Array.from(numBtns.innerText);
+
+console.log(numBtns[0].textContent);
+num_disp = [];
+
+if (num_disp) {
+    for (let i = 0; i < numBtns.length; i++) {
+        numBtns[i].addEventListener("click", () => {
+            num_disp.push(numBtns[i].innerText);
+            num = num_disp.join('');
+            display.textContent = num;
+            console.log(num_disp);
+        });
+    }
 }
+
+clear.addEventListener("click", () => {
+    display.textContent = '';
+    num_disp = [];
+});
+    
 
 
 let operators = {
