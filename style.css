@@ -30,11 +30,16 @@ html {
 
 #display {
     position: absolute;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
     background-color: #fff3;
-    width: 37em;
-    height: 10em;
+    width: 5.85em;
+    height: 1.6em;
+    padding: 0.2em;
     border-radius: 10px;
     transform: translate(0 , -180%);
+    font-size: 100px;
 }
 
 #buttons {
@@ -48,7 +53,7 @@ html {
     transform: translate(0, 17%);
 }
 
-.nums {
+.btn {
     color: white;
     width: 5.7em;
     height: 5.2em;
@@ -64,11 +69,11 @@ html {
     text-shadow: 2px 2px 3px black;
 }
 
-.nums:hover {
+.btn:hover {
     background-color: #8885;
 }
 
-.nums:active {
+.btn:active {
     transition: none;
     color: #fff6;
 }

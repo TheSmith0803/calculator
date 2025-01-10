@@ -1,4 +1,13 @@
+const display = document.querySelector("#display");
+const buttons = document.querySelectorAll(".btn");
 
+for (let i = 0; buttons.length; i++) {
+    buttons[i].addEventListener("click", () => {
+        let num = buttons[i].textContent;
+
+        display.textContent = num; 
+    });
+}
 
 let operators = {
     add: function (a, b) {return a + b},
@@ -8,3 +17,4 @@ let operators = {
     exponent: function (a, b) {return a ** b},
     sqrt: function (a) {return a ** (1/2)},
 }
+
