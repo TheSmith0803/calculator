@@ -2,6 +2,7 @@ const calculator = document.querySelector("#calc-container");
 const display = document.querySelector("#display");
 const buttons = document.querySelectorAll(".btn");
 const numBtns = document.querySelectorAll(".num");
+const optBtns = document.querySelectorAll(".operator");
 const clear = document.querySelector("#clear");
 
 numBtns.innerText
@@ -10,7 +11,9 @@ numBtns.innerText
 
 console.log(numBtns[0].textContent);
 num_disp = [];
+let ops;
 
+//adding numbers to display
 if (num_disp) {
     for (let i = 0; i < numBtns.length; i++) {
         numBtns[i].addEventListener("click", () => {
@@ -22,11 +25,18 @@ if (num_disp) {
     }
 }
 
+//handling of operators
+for (let i = 0; i < optBtns.length; i++) {
+    optBtns[i].addEventListener("click", () => {
+        ops = optBtns[i].textContent;
+        console.log(ops);
+    });
+}
+
 clear.addEventListener("click", () => {
     display.textContent = '';
     num_disp = [];
 });
-    
 
 
 let operators = {
@@ -38,3 +48,9 @@ let operators = {
     sqrt: function (a) {return a ** (1/2)},
 }
 
+
+switch (operators) {
+    case "+":
+        operators.add()
+
+}
