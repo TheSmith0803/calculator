@@ -5,6 +5,9 @@ const numBtns = document.querySelectorAll(".num");
 const optBtns = document.querySelectorAll(".operator");
 const clear = document.querySelector("#clear");
 
+//
+const operDisplay = document.querySelector("#current-op");
+
 numBtns.innerText
 
 //num_arr = Array.from(numBtns.innerText);
@@ -30,6 +33,7 @@ for (let i = 0; i < optBtns.length; i++) {
     optBtns[i].addEventListener("click", () => {
         ops = optBtns[i].textContent;
         console.log(ops);
+        operDisplay.textContent = optBtns[i].textContent;
     });
 }
 
