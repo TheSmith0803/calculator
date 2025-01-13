@@ -18,7 +18,7 @@ html {
     justify-content: center;
     align-items: center;
     position: absolute;
-    width: 40em;
+    width: 50em;
     height: 49em;
     background-color: #0033ee55;
     left: 50%;
@@ -34,7 +34,7 @@ html {
     justify-content: flex-end;
     align-items: center;
     background-color: #fff3;
-    width: 5.85em;
+    width: 7.45em;
     height: 1.6em;
     padding: 0.2em;
     border-radius: 10px;
@@ -43,21 +43,80 @@ html {
     color: #229a;
 }
 
-#buttons {
+#buttons1 {
     position: absolute;
-    width: 15.8em;
+    width: 14em;
     font-size: 45px;
     font-weight: 800;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    transform: translate(0, 17%);
+    transform: translate(-14%, 17%);
+}
+
+#buttons2 {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 9em;
+    height: 35em;
+    transform: translate(205%, 5.8em);
+}
+
+.backspace {
+    color: #229a;
+    display: flex;
+    font-size: 80px;
+    justify-content: center;
+    align-items: center;
+    width: 2em;
+    height: 10em;
+    background-color: #aae5;
+    border-radius: 10px;
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.enter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 80px;
+    width: 2em;
+    height: 10em;
+    background-color: #aae5;
+    border-radius: 10px;
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.backspace:hover,
+.enter:hover {
+    background-color: #8885;
+}
+.backspace:active,
+.enter:active {
+    transition: none;
+    color: #fff6;
+}
+
+.enter img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2em;
+}
+
+.side {
+    margin: 5px;
 }
 
 .btn {
     color: white;
-    width: 3.15em;
+    width: 3em;
     height: 2.9em;
     background-color: #fff4;
     border-radius: 10px;
@@ -89,3 +148,4 @@ html {
 .operator {
     background-color: #2227;
 }
+
