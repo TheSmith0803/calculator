@@ -28,6 +28,15 @@ html {
     box-shadow: 0 0 30px black;
 }
 
+#current-op {
+    position: absolute;
+    transform: translate(325%, -160%);
+    width: 2em;
+    height: 2em;
+    font-size: 5em;
+    color: #2295;
+}
+
 #display {
     position: absolute;
     display: flex;
