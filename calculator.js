@@ -1,3 +1,8 @@
+//const variables to edit for calculator interaction
+const display = document.querySelector("#display");
+
+
+//variables to hold numbers and current operator
 let num1;
 let num2;
 let oper;
@@ -32,3 +37,5 @@ function operate(n1,n1,op) {
 }
 
 //im gonna punch hole in wall
+
+//populate display
