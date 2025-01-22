@@ -6,6 +6,7 @@ const display = document.querySelector("#display");
 let num1;
 let num2;
 let oper;
+let something = 0;
 
 function add(a,b) {
     return a + b;
