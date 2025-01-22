@@ -39,3 +39,12 @@ function operate(n1,n1,op) {
 //im gonna punch hole in wall
 
 //populate display
+function populateDisplay() {
+    const nums = document.querySelectorAll(".nums");
+
+    for (let i = 0; i < nums.length; i++) {
+        nums[i].addEventListener("click", function() {
+            
+        });
+    }
+}
