@@ -24,15 +24,15 @@ function divide(a,b) {
 }
 
 function operate(n1,n1,op) {
-    switch (oper) {
+    switch (op) {
         case '+':
-            add(num1, num2);
+            add(n1, n2);
         case '-':
-            subtract(num1, num2);
+            subtract(n1, n2);
         case 'x':
-            multiply(num1, num2);
+            multiply(n1, n2);
         case '/':
-            divide(num1, num2);
+            divide(n1, n2);
     }
 }
 
